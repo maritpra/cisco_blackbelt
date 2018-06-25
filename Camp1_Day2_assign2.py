@@ -3,14 +3,15 @@
 from random import randint
 
 number = randint(1,10)
+#print(number)
 guess = 0
-while True:
-	guess = input("Guess the number:")
-	print("Wrong, try again!\n")
-	if int(guess) == number:
-		break
-	
-print("Correct!")
+while guess != number:
+	guess = int(input("Guess the number:"))
+	if guess != number:
+		print("Wrong, try again!\n")
+	else:
+		print("Correct!")
+
 
 	
 	
